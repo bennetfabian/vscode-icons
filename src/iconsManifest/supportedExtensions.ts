@@ -2108,6 +2108,7 @@ export const extensions: IFileCollection = {
     {
       icon: 'git',
       extensions: [
+        '.git',
         '.gitattributes',
         '.gitconfig',
         '.gitignore',
@@ -3180,6 +3181,15 @@ export const extensions: IFileCollection = {
     },
     { icon: 'markojs', extensions: ['marko.js'], format: FileFormat.svg },
     {
+      icon: 'markuplint',
+      extensions: ['.markuplintrc'],
+      filenamesGlob: ['.markuplintrc', 'markuplint.config'],
+      extensionsGlob: ['json', 'yaml', 'yml', 'js', 'cjs', 'mjs', 'ts'],
+      filename: true,
+      light: true,
+      format: FileFormat.svg,
+    },
+    {
       icon: 'master-co',
       extensions: [],
       filenamesGlob: ['master', 'master.css'],
@@ -3835,6 +3845,23 @@ export const extensions: IFileCollection = {
         'local',
       ],
       filename: true,
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'packship',
+      extensions: [
+        '.packshiprc',
+        '.packshiprc.json',
+        '.packshiprc.js',
+        '.packshiprc.ts',
+        'packship.config.js',
+        'packship.config.ts',
+        'packship.config.mjs',
+        'packship.config.mts',
+        'packship.config.json',
+      ],
+      filename: true,
+      light: true,
       format: FileFormat.svg,
     },
     {
@@ -5511,6 +5538,12 @@ export const extensions: IFileCollection = {
       extensionsGlob: ['json'],
       filename: true,
       disabled: true,
+      format: FileFormat.svg,
+    },
+    {
+      icon: 'tsdoc',
+      extensions: ['tsdoc.json'],
+      filename: true,
       format: FileFormat.svg,
     },
     {
